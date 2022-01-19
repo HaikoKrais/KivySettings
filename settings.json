@@ -1,0 +1,31 @@
+[
+    {
+        "type": "path",
+        "title": "Pfad zur Datei",
+        "desc": "Datei auswählen",
+        "section": "Panel 1",
+        "key": "item 1"
+    },
+    {
+        "type": "bool",
+        "title": "Benachrichtigungen",
+        "desc": "Benachrichtigunen ein / aus",
+        "section": "Panel 1",
+        "key": "item 2"
+    },
+    {
+        "type": "options",
+        "title": "Textfarbe",
+        "desc": "Auswahl der Textfarbe",
+        "section": "Panel 1",
+        "key": "item 3",
+        "options": ["Blau", "Gelb", "Schwarz"]
+    },
+    {
+        "type": "numeric",
+        "title": "Alarmgrenze",
+        "desc": "Obergrenze für XYZ",
+        "section": "Panel 1",
+        "key": "item 4"
+    }
+]

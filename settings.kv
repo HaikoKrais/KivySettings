@@ -1,0 +1,41 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        text: '1 - Choose your settings layout'
+    BoxLayout:
+        orientation: 'horizontal'
+        ToggleButton:
+            id: TabbedPanel
+            text: 'Tabbed Panel'
+            on_press:
+                app.set_type('TabbedPanel')
+                app.untoggle('TabbedPanel')
+        ToggleButton:
+            id: Spinner
+            text: 'Spinner'
+            on_press:
+                app.set_type('Spinner')
+                app.untoggle('Spinner')
+        ToggleButton:
+            id: Sidebar
+            text: 'Sidebar'
+            on_press:
+                app.set_type('Sidebar')
+                app.untoggle('Sidebar')
+        ToggleButton:
+            id: NoMenu
+            text: 'No Menu\n(Leave with ESC)'
+            on_press:
+                app.set_type('NoMenu')
+                app.untoggle('NoMenu')
+    Button:
+        text: '2 - Open the settings'
+        on_release: app.open_settings()
+    Button:
+        text: '3 - Get the settings'
+        id: read_menu
+        on_release: app.print_current_settings()
+    Label:
+        text: 'Press button'
+        id: settings_content
+
